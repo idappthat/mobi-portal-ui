@@ -1,0 +1,38 @@
+<ion-view>
+
+    <ion-nav-buttons side="primary">
+        <button class="logout button button-clear" ui-sref="landing" on-tap="logOut()">Logout
+        </button>
+    </ion-nav-buttons>
+
+    <ion-content padding="true">
+        <ion-spinner ng-hide="spinner" ng-style="center"></ion-spinner>
+        <div class="card" ng-repeat="project in projects">
+            <div class="item item-text-wrap">
+                <div class="row">
+                    <div class="col">
+                        <img class="card-image" ng-src="{{project.image.url}}" 
+                        onerror="this.src='../img/mobilogo.png'">
+                    </div>
+                    <div class="col-75">
+                        <p class="project-title">{{project.projectName}}</p>
+                        <p class="project-text">{{project.description}}</p>
+                        <a class="button button-light" href="{{project.gitHub}}" style="margin-left: 32%;" target="_blank">
+                        <i class="icon ion-social-github"></i>
+                        GitHub
+                        </a>
+                    </div>
+                </div>
+                <div class="">
+                </div>
+                <div class="row">
+                    <p class="">Progress: {{project.progress}}%</p>
+                </div>
+                <div class="progress-bar-outline">
+                    <div ng-style="{'width' : '{{project.progress}}%' };" class="progress-bar">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

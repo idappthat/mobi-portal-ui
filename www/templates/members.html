@@ -1,0 +1,29 @@
+<ion-view>
+    <ion-nav-buttons side="primary">
+        <button class="logout button button-clear" ui-sref="landing" on-tap="logOut()">Logout
+        </button>
+    </ion-nav-buttons>
+    <ion-content padding="true">
+        <div class="card" ng-repeat="member in members">
+            <div class="item item-text-wrap">
+                <div class="row">
+                    <!-- <img class="thumbnail" onerror="src='../img/mobilogo.png'" ng-src="{{member.image}}"> -->
+                    <div class="col-50">
+                        <div class="name">
+                            {{member.firstName}}
+                        </div>
+                        <div ng-show="{{member.datePayed}}" class="inline-block status current">
+                            Current
+                        </div>
+                        <div ng-hide="{{member.datePayed}}" class="inline-block status not-current">
+                            Not Current
+                        </div>
+                        <div class="privileges inline-block">
+                            {{member.privilege}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

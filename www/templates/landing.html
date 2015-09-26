@@ -1,0 +1,65 @@
+<ion-view hide-nav-bar="true" hide-back-button="true">
+    <ion-content>
+
+        <div ng-hide="userData.newMember" class="logo-center">
+            <img style="width: 100%;" ng-src="{{logo}}">
+        </div>
+
+        <div class="container">
+            <div style="padding-left:20%; padding-right:20%">
+                <!-- User info form -->
+                <form class="landing-form" name="userForm" novalidate>
+
+                    <label class="item item-input" ng-class="valid(userForm.username.$valid, userForm.username.$dirty)">
+                        <i class="icon ion-person placeholder-icon"></i>
+                        <input name="username" ng-model="userData.username" type="text" placeholder="User Name" maxLength="16" ng-required="userData.newMember">
+                    </label>
+
+                    <label class="item item-input" ng-class="valid(userForm.password.$valid, userForm.password.$dirty)">
+                        <i class="icon ion-locked placeholder-icon"></i>
+                        <input name="password" ng-model="userData.password" type="password" placeholder="Password" maxLength="16" ng-required="userData.newMember">
+                    </label>
+
+                    <label ng-show="userData.newMember" class="item item-input" ng-class="valid(userForm.email.$valid, userForm.email.$dirty)">
+                        <i class="icon ion-email placeholder-icon"></i>
+                        <input name="email" ng-model="userData.email" type="email" placeholder="Email" maxLength="50" ng-required="userData.newMember">
+                    </label>
+
+                    <label ng-show="userData.newMember" class="item item-input" ng-class="valid(userForm.firstName.$valid, userForm.firstName.$dirty)">
+                        <i class="icon ion-person placeholder-icon"></i>
+                        <input name="firstName" ng-model="userData.firstName" placeholder="First Name" maxlength="32" type="text" ng-required="userData.newMember">
+                    </label>
+
+                    <label ng-show="userData.newMember" class="item item-input" ng-class="valid(userForm.lastName.$valid, userForm.lastName.$dirty)">
+                        <i class="icon ion-person placeholder-icon"></i>
+                        <input name="lastName" ng-model="userData.lastName" placeholder="Last Name" maxlength="32" type="text" ng-required="userData.newMember">
+                    </label>
+
+                    <label ng-show="userData.newMember" class="item item-input" ng-class="valid(userForm.tshirtSize.$valid, userForm.tshirtSize.$dirty)">
+                        <i class="icon ion-ios-body placeholder-icon"></i>
+                        <input name="tshirtSize" ng-model="userData.tshirtSize" placeholder="T-Shirt Size" maxlength="32" type="text" ng-required="userData.newMember">
+                    </label>
+
+                    <label ng-show="userData.newMember" class="item item-input" ng-class="valid(userForm.studentId.$valid, userForm.studentId.$dirty)">
+                        <i class="icon ion-pound placeholder-icon"></i>
+                        <input name="studentId" ng-model="userData.studentId" placeholder="Student Id" maxlength="32" type="text" ng-required="userData.newMember">
+                    </label>
+
+                    <br>
+
+                    <center>
+                        <button on-tap="userForm.$valid && signIn()" class="button button-balanced button-centered landing-button">
+                            {{signInButton}}
+                        </button>
+
+                        <button on-tap="createAcc()" class="button button-positive button-centered landing-button">
+                            {{createButton}}
+                        </button>
+                    </center>
+
+                </form>
+            </div>
+        </div>
+
+    </ion-content>
+</ion-view>

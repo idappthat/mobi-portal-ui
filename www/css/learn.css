@@ -1,0 +1,83 @@
+.android-icon {
+    background: url("../img/android1.png") no-repeat;
+    width: 150px;
+    height: 150px;
+    margin: 5% 5% 0 5%;
+    background-size: 95%;
+    background-position: center;
+    transision: all 0.5s;
+}
+
+.apple-icon {
+    background: url("../img/apple1.png") no-repeat;
+    width: 150px;
+    height: 150px;
+    margin: 5% 5% 0 5%;
+    background-size: 95%;
+    background-position: center;
+    transision: all 0.5s;
+}
+
+.html-icon {
+    background: url("../img/language-html51.png") no-repeat;
+    width: 150px;
+    height: 150px;
+    margin: 5% 5% 0 5%;
+    background-size: 95%;
+    background-position: center;
+    transision: all 0.5s;
+}
+
+.memory-icon {
+    background: url("../img/memory1.png") no-repeat;
+    width: 150px;
+    height: 150px;
+    margin: 5% 5% 0 5%;
+    background-size: 95%;
+    background-position: center;
+    transision: all 0.5s;
+}
+
+.android-icon:hover {
+    background: url("../img/android.png") no-repeat;
+    width: 150px;
+    height: 150px;
+    margin: 5% 5% 0 5%;
+    background-size: 100%;
+}
+
+.apple-icon:hover {
+    background: url("../img/apple.png") no-repeat;
+    width: 150px;
+    height: 150px;
+    margin: 5% 5% 0 5%;
+    background-size: 100%;
+}
+
+.html-icon:hover {
+    background: url("../img/language-html5.png") no-repeat;
+    width: 150px;
+    height: 150px;
+    margin: 5% 5% 0 5%;
+    background-size: 100%;
+}
+
+.memory-icon:hover {
+    background: url("../img/memory.png") no-repeat;
+    width: 150px;
+    height: 150px;
+    margin: 5% 5% 0 5%;
+    background-size: 100%;
+}
+
+.row1 {
+    margin: 0 25% 5% 33%;
+}
+
+ul li iframe {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+

@@ -1,0 +1,66 @@
+.landing-button {
+    width: 200px
+}
+
+.landing-form {
+    min-width: 150px;
+}
+
+.valid {
+    border-color: green;
+}
+
+.invalid {
+    border-color: red;
+}
+
+.item-input {
+    margin: 10px 5% 0% 5%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    border-width: 3px;
+}
+
+.container {
+    width: 100%;
+}
+
+.button-centered {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.logout {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+}
+
+.logo-center {
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    min-width: 200px; 
+    width: 20%;
+}
+
+.thumbnail {
+    max-width: 100px;
+    max-height: 100px;
+    width: 100px;
+    height: 100px;
+}
+
+.card-image {
+    width: 80%;
+    height: 80%;
+    float: left;
+}
+

@@ -1,0 +1,42 @@
+.name {
+    text-align: left;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 5px;
+    margin: 0 0 50px 0;
+}
+
+.current {
+    background-color: #55BB55;
+    width: 90px;
+    border-radius: 20px;
+    opacity: .7;
+}
+
+.not-current {
+    background-color: red;
+    width: 120px;
+    border-radius: 20px;
+    opacity: .5;
+}
+
+.status {
+	margin: 0 20px 0 0;
+    float: left;
+    height: 30px;
+    padding: 5px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.privileges {
+    padding: 5px;
+    color: white;
+    font-weight: bold;
+    float: left;
+    width: 100px;
+    text-align: center;
+    background-color: lightblue;
+    border-radius: 20px;
+}

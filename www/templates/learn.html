@@ -1,0 +1,23 @@
+<ion-view>
+
+    <ion-nav-buttons side="primary">
+        <button class="logout button button-clear" ui-sref="landing" on-tap="logOut()">Logout
+        </button>
+    </ion-nav-buttons>
+    
+    <ion-content padding="true">
+        <ion-spinner ng-style="{{center}}" ng-hide="spinner"></ion-spinner>
+        <ul>
+            <li class="video" ng-repeat="urls in videos">
+                <iframe id="ytplayer" type="text/html" width="640" height="390" 
+                allowfullscreen="allowfullscreen" src="{{urls.videoUrl}}" frameborder="0"/>
+            </li>
+        </ul>
+    </ion-content>
+</ion-view>
+
+            <!-- SAVE FOR LATER WHEN THERE ARE MORE VIDEOS -->
+            <!-- <a href="#/dashboard/android" class="android-icon inline-block"></a>
+            <a href="#/dashboard/ios" class="apple-icon inline-block"></a>
+            <a href="#/dashboard/web" class="html-icon inline-block"></a>
+            <a href="#/dashboard/hardware" class="memory-icon inline-block"></a> -->

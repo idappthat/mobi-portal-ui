@@ -1,0 +1,28 @@
+<ion-view>
+
+    <ion-nav-buttons side="primary">
+        <button class="logout button button-clear" ui-sref="landing" on-tap="logOut()">Logout
+        </button>
+    </ion-nav-buttons>
+    
+    <ion-content padding="true">
+        <ion-spinner ng-style="{{center}}" ng-hide="spinner"></ion-spinner>
+        <div class="card" ng-repeat="card in events">
+            <div class="item item-text-wrap">
+                <div class="row">
+                    <div class="col-25">
+                        <img onerror="src='../img/mobilogo.png'" 
+                        ng-src="{{card.fileUrl}}" class="card-image">
+                    </div>
+                    <div class="col-75">
+                        <div class="event-title">{{card.summary}}</div>
+                        <div class="event-text">{{card.description}}</div>
+                        <div class="event-text">Location: {{card.location}}</div>
+                        <div class="event-text">{{card.start}}</div>
+                        <div class="event-text">{{card.end}}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>
