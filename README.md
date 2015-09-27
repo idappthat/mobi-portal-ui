@@ -1,7 +1,7 @@
 # mobi-portal-ui
 Deploy instructions: <br>
   1. go to /build/package.zip and download <br>
-  2. download the epxress app <br>
+  2. download the epxress app (Be sure to use the deployment branch) <br>
   3. extract package.zip (NOTE: use the unzip command-line tool for best results) into the /public folder of express   app <br>
   4. run the express server <br>
   5. if an error occurs read (A) <br>
