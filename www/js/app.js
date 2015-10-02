@@ -60,26 +60,23 @@ app.run(function($rootScope, $state, $cookies, API) {
 // /**
 //  * Startup checks
 //  */
-// app.run(function($state, $cookies, $ionicPopup, API) {
+app.run(function($state, $cookies, $ionicPopup, API) {
 
-//     if(!$cookies.get('mobiSession')) {
-//         console.log("No cookie");
-//         return;
-//     }
+    if(!$cookies.get('mobiSession')) {
+        return;
+    }
 
-//     API.validate().save({'sessionToken':$cookies.get('mobiSession')})
-//         .$promise.then(function(response) {
+    API.validate().save({'sessionToken':$cookies.get('mobiSession')})
+        .$promise.then(function(response) {
 
-//         if(typeof response.code !== 'undefined') {
-//             console.log("invalid cookie");
-//             $cookie.remove('mobiSession');
-//             return;
-//         }
+        if(typeof response.code !== 'undefined') {
+            $cookie.remove('mobiSession');
+            return;
+        }
 
-//         console.log("valid cookie");
-//         $state.go('dashboard.events');
-//     });
-// });
+        $state.go('dashboard.events');
+    });
+});
 
 app.config(function($stateProvider, $urlRouterProvider) {
 

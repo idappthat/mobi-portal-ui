@@ -6,35 +6,35 @@ app.factory('API', function($resource) {
 
     return {
     	events: function() {
-    		return $resource("http://localhost:3000/events");   
+    		return $resource("http://localhost/events");   
     	},
 
     	projects: function() {
-    		return $resource("http://localhost:3000/projects");
+    		return $resource("http://localhost/projects");
     	},
 
         login: function() {
-            return $resource('http://localhost:3000/login', {}, {});
+            return $resource('http://localhost/login', {}, {});
         },
 
         signUp: function() {
-            return $resource('http://localhost:3000/signup', {}, {});
+            return $resource('http://localhost/signup', {}, {});
         },
 
         videos: function() {
-            return $resource('http://localhost:3000/videos');
+            return $resource('http://localhost/videos');
         },
 
         users: function() {
-            return $resource('http://localhost:3000/users');
+            return $resource('http://localhost/users');
         },
 
         logOut: function() {
-            return $resource('http://localhost:3000/logout', {}, {});
+            return $resource('http://localhost/logout', {}, {});
         },
 
         validate: function() {
-            return $resource('http://localhost:3000/validate', {}, {})
+            return $resource('http://localhost/validate', {}, {})
         }
     } 
 });

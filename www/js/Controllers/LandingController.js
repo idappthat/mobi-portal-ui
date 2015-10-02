@@ -58,7 +58,7 @@
                         logout();
                         return;
                     }
-                    $cookies.put('mobiSession',response.sessionToken);
+                    $cookies.put('mobiSession', response.sessionToken);
                     $state.go('dashboard.events', {}, {});
                 });
             }
